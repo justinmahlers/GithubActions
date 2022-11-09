@@ -34,7 +34,7 @@ namespace GithubActionsLab
         {
             Assert.AreEqual(7, Program.Subtract("10","3"));
             Assert.AreEqual(16, Program.Subtract("20","4"));
-            Assert.AreEqual(3, Program.Subtract("4","3"));
+            Assert.AreEqual(1, Program.Subtract("4","3"));
         }
         [Test]
         public void Subtract_Invalid()
