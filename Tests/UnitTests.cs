@@ -46,9 +46,9 @@ namespace GithubActionsLab
         [Test]
         public void Subtract_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", "null"));
-            Assert.Throws<ArgumentNullException>(() => Program.Subtract("null", "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Subtract("null", "null"));
+            Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
+            Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, null));
         }
         [Test]
         public void Multiply_Valid()
@@ -67,9 +67,9 @@ namespace GithubActionsLab
         [Test]
         public void Multiply_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", "null"));
-            Assert.Throws<ArgumentNullException>(() => Program.Multiply("null", "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Multiply("null", "null"));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, null));
         }
         [Test]
         public void Divide_Valid()
@@ -86,11 +86,11 @@ namespace GithubActionsLab
             Assert.Throws<FormatException>(() => Program.Divide("a", "a"));
         }
         [Test]
-        public void Dividey_Null()
+        public void Divide_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Divide("1", "null"));
-            Assert.Throws<ArgumentNullException>(() => Program.Divide("null", "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Divide("null", "null"));
+            Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
+            Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Divide(null, null));
         }
         [Test]
         public void Power_Valid()
@@ -109,9 +109,9 @@ namespace GithubActionsLab
         [Test]
         public void Power_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Power("1", "null"));
-            Assert.Throws<ArgumentNullException>(() => Program.Power("null", "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Power("null", "null"));
+            Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
+            Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
         }
         // Implement 3 tests per operation, following a similar pattern as above
     }
