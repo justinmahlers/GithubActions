@@ -113,6 +113,7 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
         }
+        
         // Implement 3 tests per operation, following a similar pattern as above
     }
 }
